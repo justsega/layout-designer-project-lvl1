@@ -52,12 +52,14 @@ h1 {
 }
 
 h2 {
+  color: var(--main);
   font-size: var(--font-size-h2);
   font-family: var(--font-family-headings);
   line-height: var(--line-height-headings);
 }
 
 h3 {
+  color: var(--main);
   font-size: var(--font-size-h3);
   font-family: var(--font-family-headings);
   line-height: var(--line-height-headings);
@@ -90,7 +92,7 @@ body {
   content: "";
 }
 
-.header-container {
+.container {
   position: relative;
 
   display: flex;
@@ -143,4 +145,35 @@ body {
   text-decoration: none;
 
   background-color: var(--main);
+}
+
+.video-block .container {
+  align-items: center;
+  justify-content: flex-start;
+  height: 800px;
+  min-height: 80px;
+
+  text-align: center;
+}
+
+.video-block h2 {
+  margin-bottom: 30px;
+}
+
+.video-block {
+
+  background-color: var(--white);
+}
+
+.video {
+  position: absolute;
+  bottom: -100px;
+
+
+  width: 919px;
+  height: 569px;
+}
+
+#navigation {
+  background-color: var(--main-dark);
 }
